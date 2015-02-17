@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Morphing Header Navigation Demo</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<style>body {
+  background-color: #eee;
+  text-align: center;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden;
+}
+body article {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 728px;
+  padding: 20px 20px 50px;
+}
+body h1 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  color: #5289c6;
+  font-size: 2.4em;
+  line-height: 1.1;
+  letter-spacing: 2px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+body p {
+  color: #444;
+  font-family: 'Roboto Condensed', serif;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+.burger {
+  position: relative;
+  margin-top: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 4px 0;
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.burger:hover {
+  background-color: #5289c6;
+}
+.burger.expand {
+  margin-top: 0;
+  padding: 24px 0 100px;
+  width: 100%;
+  border-radius: 0;
+  background-color: #5289c6;
+}
+
+.line {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 30px;
+  left: 50%;
+  top: 8px;
+  margin-left: -15px;
+  border-radius: 10px;
+  box-sizing: content-box;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.15);
+  background-color: #eee;
+  -webkit-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -o-transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: all 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.line:nth-child(3) {
+  top: 28px;
+}
+.line:nth-child(2) {
+  top: 18px;
+}
+
+.expand .line {
+  width: 40px;
+  margin-left: -20px;
+}
+.expand .line:first-child {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 40px;
+}
+.expand .line:nth-child(3) {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  top: 40px;
+}
+.expand .line:nth-child(2) {
+  opacity: 0;
+  top: 40px;
+}
+
+nav {
+  display: none;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 35px;
+}
+
+ul {
+  font-size: 1.1em;
+  font-family: 'Roboto Condensed', sans-serif;
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  color: white;
+  display: inline-block;
+  margin: 0 20px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+ul li:hover {
+  cursor: pointer;
+  color: #ccdff4;
+}
+</style>
+</head>
+
+<body>
+
+<div class="burger">
+  <span class="line"></span>
+  <span class="line"></span>
+  <span class="line"></span>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+</div>
+<article>
+  <h1>Morphing Header Navigation Demo</h1>
+  <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p> 
+  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+  </p>
+  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+  <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit posuere rutrum. Suspendisse hendrerit rutrum purus quis venenatis. Nullam tincidunt vel lectus eget lobortis. Sed efficitur tincidunt posuere. Maecenas sagittis dui at ex vulputate iaculis. Aliquam faucibus leo eu ligula ultricies, id tincidunt erat faucibus. Pellentesque id porttitor ipsum, at venenatis massa. Quisque sagittis bibendum purus. Aliquam fringilla elit id metus scelerisque vulputate. Aliquam vehicula condimentum lorem, et fermentum lorem tincidunt ut. Mauris finibus nibh in arcu pulvinar, vel hendrerit metus interdum. Nullam pretium eros vitae aliquam condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum tincidunt mattis dignissim. Donec consectetur diam consequat arcu feugiat, a lobortis massa faucibus. Integer non sem ut libero imperdiet fringilla quis sed felis.
+</p>
+<p>
+Donec ut dui id lorem commodo tincidunt. Pellentesque blandit tortor nec ex pharetra condimentum. Mauris felis risus, congue eu augue in, euismod tempor ipsum. Nunc lobortis risus non viverra vehicula. Proin interdum et augue vel condimentum. Mauris eu ipsum nec elit semper tempor eget eu mauris. Donec cursus mauris facilisis risus facilisis finibus. Nam egestas laoreet facilisis. Proin nec ante vitae lectus laoreet dapibus id et augue.
+</p>
+<p>
+Pellentesque lobortis metus ac justo auctor interdum. Aliquam nec interdum ligula, id convallis tortor. Vivamus sit amet enim dictum, blandit mauris ac, sodales libero. Morbi non massa lorem. Pellentesque ac erat erat. Integer ut felis magna. Sed condimentum orci et est mollis pretium. Cras posuere tellus ac interdum euismod. Nullam vel elit viverra, feugiat neque sit amet, rutrum purus. Etiam rutrum finibus lacus, quis consectetur odio elementum ut. Donec dapibus metus ac tincidunt ultricies. Nulla mauris lectus, pulvinar eget aliquam finibus, vestibulum ut mauris. Duis et eros vitae velit porta convallis.
+</p>
+<p>
+Nunc quam ante, scelerisque et nibh vel, dapibus rutrum odio. Praesent non interdum metus. Integer quis mauris fringilla quam dictum egestas. Curabitur varius libero feugiat nisl ornare, vel scelerisque tortor facilisis. Vestibulum in maximus metus, sed fermentum sem. Praesent laoreet eget nunc fermentum hendrerit. Suspendisse rhoncus accumsan velit nec luctus. Curabitur ac rhoncus nisl. Nunc rhoncus nisi in tellus tincidunt rhoncus. Nulla facilisi. Suspendisse consectetur magna eu dolor accumsan, eget lacinia velit congue. Ut id nisi diam.
+</p>
+<p>
+Cras lacinia bibendum nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam non justo a nisl ultricies efficitur eu ac ex. Proin fermentum suscipit velit eget semper. Mauris cursus, justo eget fringilla sagittis, mi nunc semper est, in facilisis lectus velit nec nisi. Cras luctus bibendum tortor ac hendrerit. Aliquam eu eros facilisis, ornare dui hendrerit, aliquam justo.
+</p>
+</article>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$('.burger').on('click', function(){
+  if( $(this).is('.expand')){
+    $('nav').fadeOut('fast');
+    $(this).delay(100).queue(function(){
+      $(this).removeClass('expand').dequeue();
+    });
+  } else{
+    $(this).delay(100).queue(function(){
+      $(this).addClass('expand').dequeue();
+    });
+    $('nav').delay(200).fadeIn('fast');
+  }
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
