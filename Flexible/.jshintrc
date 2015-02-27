@@ -1,0 +1,10 @@
+{
+  "indent": 2,
+  "quotmark": "single",
+  "browser": true,
+  "globalstrict": true,
+  "globals": {
+    "require": true,
+    "module": true
+  }
+}
