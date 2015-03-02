@@ -1,0 +1,21 @@
+{
+  "name": "jquery.passwordGenerator",
+  "main": "jquery.passwordGenerator.js",
+  "version": "1.1.0",
+  "authors": [
+    "Mario Vidov"
+  ],
+  "description": "With this plugin you can easily generate different password with very high level of security.",
+  "keywords": [
+    "passwordgenerator",
+    "password"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
