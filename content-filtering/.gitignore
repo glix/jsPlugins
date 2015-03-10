@@ -1,0 +1,14 @@
+### gulp ###
+
+node_modules
+npm-debug.log
+
+### sass ###
+
+.sass-cache
+
+### ignore resources ###
+
+assets/images/originals/
+relevant-resources/
+

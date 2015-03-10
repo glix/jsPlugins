@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-newer": "*",
+    "gulp-imagemin": "*",
+    "tiny-lr": "*",
+    "gulp-plumber": "*",
+    "gulp-sass": "*"
+  }
+}

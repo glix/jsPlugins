@@ -1,0 +1,50 @@
+// =============================================
+// =            Filter Content Styles            =
+// =============================================*/
+
+// individual items (sections)
+.filterableItem {
+	display:inline-block;
+	float:left;
+	max-width:33%;
+	padding:0.7em;
+	@media all and (max-width:1150px){
+		margin:0.25em 0 0.25em 0;
+		max-width:50%;
+	}
+	@media all and (max-width:700px){
+		margin:0.25em 0 0.25em 0;
+		max-width:100%;
+	}
+}
+
+/*-----  End of Filter Content Styles  ------*/
+
+
+// ==================================
+// =            Filter Nav            =
+// ==================================*/
+
+span.legend {
+	text-transform:uppercase;
+	font-weight:400;
+}
+
+ul.filterControls {
+	margin:0 0 0 0;
+	list-style-type: none;
+	// override browser styling
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	padding: 0 0 0 0;
+
+	li {
+		display:inline-block;
+		float:left;
+		padding:1em;
+	}
+}
+/*-----  End of Filter Nav  ------*/

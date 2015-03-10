@@ -1,0 +1,49 @@
+/*==================================
+=            Filter Nav            =
+==================================*/
+
+.filterControls {
+	margin-bottom:50px;
+}
+
+.filterResults {
+	float:left;
+	min-height:50px;
+}
+
+span.currentChoice {
+	font-style:italic;
+}
+
+span.legend {
+	text-transform:uppercase;
+}
+
+ul.filterNav li {
+	list-style-type: none;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	margin:3px;
+	font-size:24px;
+	padding:2px;
+} 
+
+
+ul.filterNav li a {
+	text-transform:capitalize;
+	text-decoration:none;
+	background:gray;
+	color:white;
+	padding:3px 6px 3px 6px;
+	margin:3px;
+	&:hover {
+		background:#444;
+	}
+	&.active {
+	background:#444;
+	}
+
+} // end a
+
+/*-----  End of Filter Nav  ------*/
