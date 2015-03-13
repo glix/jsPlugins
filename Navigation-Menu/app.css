@@ -1,0 +1,32 @@
+/* Base styles */
+body { margin: 0; }
+
+header { background-color: #aaa; height: 50px; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+a { text-decoration: none; }
+
+.container { margin: auto; max-width: 600px; }
+
+/* Navigation styles */
+header { position: relative; }
+
+.main-nav-menu { background-color: #aaa; border-bottom: 2px solid #909090; position: relative; z-index: 10; }
+
+.main-nav-list { position: relative; text-align: justify; }
+.main-nav-list li { display: inline-block; }
+
+.main-nav-link { color: #000; display: block; height: 50px; line-height: 50px; padding: 0 20px; }
+.main-nav-link:hover { background-color: #909090; }
+
+.main-nav-drop .drop-menu { position: absolute; top: -400px; z-index: 5; box-shadow: 0px 2px 5px #aaa; box-sizing: border-box; height: 400px; -webkit-transition: top .5s ease; transition: top .5s ease; width: 100%; }
+.main-nav-drop .drop-menu.active { top: 0; }
+.main-nav-drop .drop-menu[data-nav-item*='red'] { background-color: #CF3B29; border-bottom: 1px solid #a42f21; }
+.main-nav-drop .drop-menu[data-nav-item*='orange'] { background-color: orange; border-bottom: 1px solid #cc8400; }
+.main-nav-drop .drop-menu[data-nav-item*='yellow'] { background-color: #FFDF00; border-bottom: 1px solid #ccb200; }
+.main-nav-drop .drop-menu[data-nav-item*='green'] { background-color: #156715; border-bottom: 1px solid #0c3d0c; }
+.main-nav-drop .drop-menu[data-nav-item*='blue'] { background-color: #2121A6; border-bottom: 1px solid #19197b; }
+.main-nav-drop .drop-menu[data-nav-item*='violet'] { background-color: #944194; border-bottom: 1px solid #713171; }
+
+.no-csstransitions .main-nav-inverse-drop .drop-menu { display: none; opacity: 1; top: 0; }

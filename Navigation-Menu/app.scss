@@ -1,0 +1,112 @@
+// Variables
+$black: #000;
+$grey: #aaa;
+$red: #CF3B29;
+$orange: orange;
+$yellow: #FFDF00;
+$green: #156715;
+$blue: #2121A6;
+$violet: #944194;
+
+$t-body: $black;
+$bg-header: $grey;
+
+/* Base styles */
+body {
+    margin: 0;
+}
+header {
+    background-color: $bg-header;
+    height: 50px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin: auto;
+    max-width: 600px;
+}
+/* Navigation styles */
+header {
+    position: relative;
+}
+// Main Nav Menu
+.main-nav-menu {
+    background-color: $bg-header;
+    border-bottom: 2px solid darken($bg-header, 10%);
+    position: relative;
+    z-index: 10;
+}
+.main-nav-list {
+    position: relative;
+    text-align: justify;
+    li {
+        display: inline-block;
+    }
+}
+.main-nav-link {
+    color: $t-body;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    &:hover {
+        background-color: darken($bg-header, 10%);
+    }
+}
+// Main Nav Drop
+.main-nav-drop {
+    .drop-menu {
+        position: absolute;
+        top: -400px;
+        z-index: 5;
+
+        box-shadow: 0px 2px 5px $bg-header;
+        box-sizing: border-box;
+        height: 400px;
+        transition: top .5s ease;
+        width: 100%;
+        &.active {
+            top: 0;
+        }
+        &[data-nav-item*='red'] {
+            background-color: $red;
+            border-bottom: 1px solid darken($red, 10%);
+        }
+        &[data-nav-item*='orange'] {
+            background-color: $orange;
+            border-bottom: 1px solid darken($orange, 10%);
+        }
+        &[data-nav-item*='yellow'] {
+            background-color: $yellow;
+            border-bottom: 1px solid darken($yellow, 10%);
+        }
+        &[data-nav-item*='green'] {
+            background-color: $green;
+            border-bottom: 1px solid darken($green, 10%);
+        }
+        &[data-nav-item*='blue'] {
+            background-color: $blue;
+            border-bottom: 1px solid darken($blue, 10%);
+        }
+        &[data-nav-item*='violet'] {
+            background-color: $violet;
+            border-bottom: 1px solid darken($violet, 10%);
+        }
+    }
+}
+// Fallback for browsers that don't support css transitions
+.no-csstransitions {
+    .main-nav-inverse-drop {
+        .drop-menu {
+            display: none;
+            opacity: 1;
+            top: 0;
+        }
+    }
+}
