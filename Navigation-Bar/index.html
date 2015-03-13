@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Minimal Auto-hide Navigation Bar Demo</title>
+<style>
+* {
+ margin: 0px;
+ padding: 0px;
+ font-family: helvetica neue, helvetica, arial, sans-serif;
+ font-weight: 200;
+}
+body { background-color:#34495E}
+.nav {
+  position: fixed;
+  top: 0px;
+  height: 100px;
+  background: #E74C3C;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+}
+
+.content {
+  height: 2000px;
+  padding: 20px;
+  color:#fff;
+  width:728px;
+  margin:150px auto;
+}
+.content p {
+  margin: 20px 0;
+}
+</style>
+</head>
+
+<body>
+<div class="nav">I'm an auto-hide navigation bar!</div>
+
+<div class="content">
+  <h1>Minimal Auto-hide Navigation Bar Demo</h1>
+  <div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend tincidunt felis, ac pulvinar lectus condimentum vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ut turpis eros. Praesent et massa feugiat, porta mauris et, bibendum lacus. Vestibulum vel semper turpis. Maecenas dapibus lacus lorem, quis efficitur purus ultrices at. Maecenas nec dui at neque maximus elementum nec in mauris. Ut pretium, turpis et consequat varius, lectus felis elementum velit, eget aliquam nibh felis placerat turpis. Sed eget nisi mi. Integer ultricies semper viverra.</p>
+  <p>Phasellus dignissim libero in nisi auctor, eget vehicula ligula euismod. Donec dignissim erat quis lobortis iaculis. Suspendisse potenti. Nullam euismod vehicula lorem, id feugiat ipsum lobortis et. Quisque blandit vitae justo id venenatis. Nullam convallis, augue eu placerat tristique, leo metus hendrerit dui, sed vestibulum enim mi eu magna. Maecenas porta porttitor metus in lacinia. Aliquam lacus arcu, blandit sit amet mauris at, fringilla tincidunt elit. Nullam vitae hendrerit est, sed tempor sapien. Nam a leo nec lacus suscipit dapibus sed in orci. Cras dignissim, orci id interdum semper, turpis metus viverra magna, a iaculis tellus odio nec dolor. Duis porttitor sem vel porta commodo. Maecenas vitae ex fermentum, interdum orci et, placerat urna. Nulla aliquam diam a viverra tincidunt. Suspendisse potenti. Vestibulum at efficitur nisl.</p>
+  <p>Aliquam erat volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec semper diam nibh, at iaculis sem fringilla at. Morbi tortor nunc, commodo eget porta non, finibus venenatis nibh. Phasellus feugiat convallis hendrerit. In tincidunt nisl justo, dictum sollicitudin nisi iaculis ac. Sed hendrerit tellus at vulputate sodales. Donec eleifend nisl at dictum sagittis. Ut eleifend ante eget nunc feugiat dictum. Donec blandit urna tellus, id placerat ipsum consectetur condimentum. Praesent a diam ut dui feugiat dignissim laoreet a metus. Nunc placerat vehicula hendrerit.</p>
+  <p>Proin consequat sem et elit viverra, in sagittis erat scelerisque. Pellentesque nec massa sem. Nulla nec nulla eu orci tempus mattis at sit amet mi. Nunc et nunc velit. Pellentesque quis velit sed lacus sodales semper. Quisque lacinia sapien ultrices lacinia congue. Donec vel sem ut velit aliquet malesuada vel at est. Mauris nisi leo, ultricies in turpis in, finibus finibus ipsum. Quisque aliquam ut libero sed varius. Curabitur placerat est nisi, eu commodo elit cursus ut. In tempus neque orci, non viverra turpis imperdiet sit amet. Mauris tincidunt vitae diam et convallis.</p>
+  <p>Ut lobortis lectus egestas dignissim pharetra. Vestibulum ex ligula, rhoncus eget laoreet consequat, pretium a nisi. Ut commodo at libero porttitor viverra. Fusce congue ipsum a sodales consequat. Nullam sit amet lorem nulla. Proin risus risus, convallis in tellus vitae, vestibulum tempor felis. Maecenas sit amet ipsum eget libero ullamcorper convallis in convallis mauris.</p>
+</div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+$(function(){
+  var prevScroll = 0,
+      curDir = 'down',
+      prevDir = 'up';
+  
+  $(window).scroll(function(){
+    	if($(this).scrollTop() >= prevScroll){
+          curDir = 'down';
+          if(curDir != prevDir){
+          $('.nav').stop();
+    	  	$('.nav').animate({ top: '-100px' }, 300);
+          prevDir = curDir;
+          }
+      } else {
+          curDir = 'up';
+          if(curDir != prevDir){
+          $('.nav').stop();
+          $('.nav').animate({ top: '0px' }, 300);
+          prevDir = curDir;
+          }
+      }
+      prevScroll = $(this).scrollTop();
+  });
+})
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
